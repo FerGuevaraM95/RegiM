@@ -1,5 +1,8 @@
-import { Section, Title, Subtitle, ImageContainer, Image, PlayButton } from './Features.styled';
+import { Section, Title, Subtitle, ImageContainer, Image, PlayButton, FeaturesContainer } from './Features.styled';
 import Thumbnail from '../../images/video-thumbnail.png';
+import { FeatureDescription } from '../../components/FeatureDescription';
+import { features } from '../../utils/Features';
+import { Divider } from '../../components/Divider';
 
 export const Features = () => {
   return (
@@ -14,6 +17,19 @@ export const Features = () => {
                 See it in action (2 min)
             </PlayButton>
         </ImageContainer>
+        <FeaturesContainer>
+            { 
+                features.map(({ id, icon, title, description, color }) => 
+                <FeatureDescription 
+                    key={id} 
+                    icon={icon}  
+                    title={title} 
+                    description={description} 
+                    color={color} 
+                />)
+            }
+        </FeaturesContainer>
+        <Divider />
     </Section>
   )
 }

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
+margin-top: 48px;
     text-align: center;
 `;
 
@@ -21,7 +22,8 @@ export const ImageContainer = styled.div`
 `;
 
 export const Image = styled.img`
-    max-width: 100%
+    max-width: 100%;
+    border-radius: 6px;
 `;
 
 export const PlayButton = styled.button`
@@ -39,4 +41,8 @@ export const PlayButton = styled.button`
     line-height: 20px;
     cursor: pointer;
     box-shadow: 0px 8px 16px -4px rgba(28, 44, 64, 0.08);
+`;
+
+export const FeaturesContainer = styled.div`
+    margin-bottom: 50px;
 `;
