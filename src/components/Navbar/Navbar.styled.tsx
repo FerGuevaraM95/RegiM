@@ -2,6 +2,6 @@ import styled from 'styled-components';
 
 export const StyledNavbar = styled.div`
     display: flex;
-    margin: 24px 20px 20px 20px;
+    margin: 20px 0px 20px 4px;
     justify-content: space-between;
 `;
