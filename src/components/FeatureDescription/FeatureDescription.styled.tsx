@@ -4,6 +4,12 @@ export const Container = styled.div`
     display: flex;
     gap: 8px;
     margin: 24px 0;
+
+    @media (min-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        max-width: 328px;
+    }
 `;
 
 export const Title = styled.h3`
@@ -13,6 +19,12 @@ export const Title = styled.h3`
     font-weight: 600;
     font-size: 20px;
     line-height: 28px;
+
+    @media (min-width: 768px) {
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+    }
 `;
 
 export const Description = styled.p`
@@ -21,6 +33,13 @@ export const Description = styled.p`
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+
+    @media (min-width: 768px) {
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
 `;
 
 export const IconContainer = styled.div`
@@ -34,4 +53,9 @@ export const IconContainer = styled.div`
     padding: 12px;
     border: 8px solid ${props => props.color === 'dark' ? '#E0F2FE' : '#CFFAFE'};
     border-radius: 50%;
+
+    @media (min-width: 768px) {
+        width: 88px;
+        height: 88px;
+    }
 `;

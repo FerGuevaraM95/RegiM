@@ -9,11 +9,22 @@ export const Title = styled.h2`
     font-size: 36px;
     font-weight: 600;
     color: #111827;
+
+    @media (min-width: 768px) {
+        font-size: 48px;
+        line-height: 60px;
+    }
 `;
 
 export const Subtitle = styled.p`
     font-size: 16px;
+    line-height: 24px;
     color: #374151;
+
+    @media (min-width: 768px) {
+        font-size: 18px;
+        line-height: 28px;
+    }
 `;
 
 export const ImageContainer = styled.div`
@@ -41,8 +52,28 @@ export const PlayButton = styled.button`
     line-height: 20px;
     cursor: pointer;
     box-shadow: 0px 8px 16px -4px rgba(28, 44, 64, 0.08);
+
+    @media (min-width: 768px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    
 `;
 
 export const FeaturesContainer = styled.div`
+    display: flex;
+    flex-direction: column;
     margin-bottom: 50px;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    @media (min-width: 1440px) {
+        gap: 80px;
+    }
 `;
