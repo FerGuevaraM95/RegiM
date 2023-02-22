@@ -17,7 +17,7 @@ export const Section = styled.section`
         right: -80px;
         top: 340px;
         border-radius: 50%;
-        background: #CFFAFE;
+        background: ${props => props.color === 'dark' ? '#E0F2FE' : '#CFFAFE'};
 
         @media (min-width: 768px) {
             width: 700px;

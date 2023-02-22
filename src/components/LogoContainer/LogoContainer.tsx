@@ -25,6 +25,9 @@ export const LogoContainer = ({name}: LogoContainerProps) => {
     }
 
   return (
-    <Container>{logosComponent[name]}</Container>
+    <Container>
+      {/* @ts-ignore */}
+      {logosComponent[name]}
+      </Container>
   )
 }

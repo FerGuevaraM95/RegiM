@@ -12,8 +12,6 @@ export const Navbar = () => {
   const theme = useSelector((state: RootState) => state.theme.color)
   const dispatch = useDispatch()
 
-  console.log({theme})
-
     return (
     <StyledNavbar>
         <RegiMLogo />

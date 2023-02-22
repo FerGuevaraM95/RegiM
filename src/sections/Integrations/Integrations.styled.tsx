@@ -23,7 +23,7 @@ export const Section = styled.section`
         right: 52px;
         top: -50px;
         border-radius: 0 0 12rem 12rem;
-        background: #CFFAFE;
+        background: ${props => props.color === 'dark' ? '#E0F2FE' : '#CFFAFE'};
 
         @media (min-width: 768px) {
             width: 624px;

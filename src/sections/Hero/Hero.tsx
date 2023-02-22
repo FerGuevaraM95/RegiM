@@ -1,5 +1,9 @@
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
+import { useSelector } from 'react-redux';
+
+
+import type { RootState } from '../../app/store';
 
 import { Section, Container, Title, SubTitleContainer, SubTitle, ImageContainer, Image } from './Hero.styled';
 import { Button } from "../../components/Button";
@@ -13,6 +17,7 @@ export const Hero = () => {
   const el = useRef(null);
 
   useEffect(() => {
+    // @ts-ignore
     const typed = new Typed(el.current, {
       strings: ["Manage your event registrations hassle free and without any dependency with the technical team. Isn’t it sounds amazing?", ], 
       startDelay: 300,
@@ -27,8 +32,10 @@ export const Hero = () => {
     };
   }, []);
 
+  const color = useSelector((state: RootState) => state.theme.color);
+
   return (
-    <Section>
+    <Section color={color}>
       <Container>
         <div>
           <Title>

@@ -27,6 +27,7 @@ export const FeatureDescription = ({ icon, title, description, color }: FeatureD
   return (
     <Container>
         <IconContainer color={color}>
+            {/* @ts-ignore */}
             {icons[icon]}
         </IconContainer>
         <div>
