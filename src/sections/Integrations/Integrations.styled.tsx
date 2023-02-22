@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 
 export const Section = styled.section`
+    position: relative;
     display: flex;
     flex-direction: column;
     margin: 48px 0 72px;
@@ -10,6 +11,35 @@ export const Section = styled.section`
     @media (min-width: 1440px) {
        flex-direction: row;
        margin: 70px 90px 220px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -100;
+        width: 304px;
+        height: 152px;
+        right: 52px;
+        top: -50px;
+        border-radius: 0 0 12rem 12rem;
+        background: #CFFAFE;
+
+        @media (min-width: 768px) {
+            width: 624px;
+            height: 312px;
+            // right: -130px;
+            border-radius: 0 0 20rem 20rem;
+
+        }
+
+        @media (min-width: 1440px) {
+            width: 760px;
+            height: 380px;
+            // right: -200px;
+            top: -70px;
+            left: -50px;
+            border-radius: 0 0 24rem 24rem;
+        }
     }
 `;
 
