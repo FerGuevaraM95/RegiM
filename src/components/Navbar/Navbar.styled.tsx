@@ -14,3 +14,9 @@ export const StyledNavbar = styled.div`
         margin: 20px 120px 20px 124px;
     }
 `;
+
+export const RightContainer = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 4px;
+`;
