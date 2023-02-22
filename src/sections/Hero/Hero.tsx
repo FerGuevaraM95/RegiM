@@ -1,4 +1,4 @@
-import { Container, Title, SubTitle, ImageContainer, Image } from './Hero.styled';
+import { Section, Container, Title, SubTitle, ImageContainer, Image } from './Hero.styled';
 import { Button } from "../../components/Button";
 import { Divider } from "../../components/Divider";
 import Mockups from '../../images/mockups.png';
@@ -6,7 +6,7 @@ import Mockups from '../../images/mockups.png';
 
 export const Hero = () => {
   return (
-    <section>
+    <Section>
       <Container>
         <div>
           <Title>
@@ -22,6 +22,6 @@ export const Hero = () => {
           </ImageContainer>
       </Container>
         <Divider />
-    </section>
+    </Section>
   )
 }

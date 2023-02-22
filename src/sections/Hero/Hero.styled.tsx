@@ -1,9 +1,36 @@
 import styled from 'styled-components';
 
+export const Section = styled.section`
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: -100;
+        width: 400px;
+        height: 400px;
+        right: -80px;
+        top: 340px;
+        border-radius: 50%;
+        background: #CFFAFE;
+
+        @media (min-width: 768px) {
+            width: 700px;
+            height: 700px;
+            top: 290px;
+            right: -130px;
+        }
+
+        @media (min-width: 1440px) {
+            right: -200px;
+            top: -260px;
+        }
+    }
+`;
+
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-
 
     @media (min-width: 1440px) {
         flex-direction: row;
