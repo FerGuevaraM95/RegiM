@@ -2,6 +2,11 @@ import styled from 'styled-components';
 
 export const Section = styled.section`
     position: relative;
+    
+
+    @media (min-width: 768px) {
+        margin: 0 20px;
+    }
 
     &::after {
         content: '';
@@ -34,6 +39,9 @@ export const Container = styled.div`
 
     @media (min-width: 1440px) {
         flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 40px;
         margin: 0 112px;
     }
 `;
@@ -52,15 +60,21 @@ export const Title = styled.h1`
     }
 `;
 
+export const SubTitleContainer = styled.div`
+    max-width: 500px;
+    min-height: 120px;
+`;
+
 export const SubTitle = styled.p`
-    margin-bottom: 40px;
+    
+    padding-bottom: 40px;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     color: #374151;
 
     @media (min-width: 768px) {
-        max-width: 75%;
+        // max-width: 75%;
         font-size: 18px;
         line-height: 28px;
     }
