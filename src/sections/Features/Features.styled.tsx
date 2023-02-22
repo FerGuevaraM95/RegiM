@@ -30,6 +30,11 @@ export const Subtitle = styled.p`
 export const ImageContainer = styled.div`
     position: relative;
     margin: 48px 0;
+    transition: 0.5s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 `;
 
 export const Image = styled.img`

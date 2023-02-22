@@ -53,6 +53,11 @@ export const IconContainer = styled.div`
     padding: 12px;
     border: 8px solid ${props => props.color === 'dark' ? '#E0F2FE' : '#CFFAFE'};
     border-radius: 50%;
+    transition: 0.5s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 
     @media (min-width: 768px) {
         width: 88px;

@@ -70,6 +70,11 @@ export const ImageContainer = styled.div`
     display: flex;
     justify-content: center;
     margin: 60px 0;
+    transition: 0.5s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 
     @media (min-width: 768px) {
         margin: 80px 0;
