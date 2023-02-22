@@ -10,6 +10,7 @@ export const Section = styled.section`
 
     @media (min-width: 1440px) {
        flex-direction: row;
+       justify-content: space-evenly;
        margin: 70px 90px 220px;
     }
 
@@ -27,7 +28,6 @@ export const Section = styled.section`
         @media (min-width: 768px) {
             width: 624px;
             height: 312px;
-            // right: -130px;
             border-radius: 0 0 20rem 20rem;
 
         }
@@ -35,7 +35,6 @@ export const Section = styled.section`
         @media (min-width: 1440px) {
             width: 760px;
             height: 380px;
-            // right: -200px;
             top: -70px;
             left: -50px;
             border-radius: 0 0 24rem 24rem;

@@ -35,6 +35,10 @@ export const ImageContainer = styled.div`
     &:hover {
         transform: scale(1.05);
     }
+
+    @media (min-width: 768px) {
+        margin: 48px 20px;
+    }
 `;
 
 export const Image = styled.img`

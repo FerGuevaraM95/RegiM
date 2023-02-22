@@ -44,6 +44,7 @@ export const Text = styled.p`
     @media (min-width: 768px) {
         font-size: 18px;
         line-height: 28px;
+        margin: 0 40px;
     }
 
     @media (min-width: 1440px) {
