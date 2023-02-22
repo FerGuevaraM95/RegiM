@@ -6,6 +6,6 @@ describe('Home', () => {
   it('renders headline', () => {
     const{ getByRole }= render(<Home />);
 
-    expect(getByRole('heading', {name: /regim/i})).toBeInTheDocument();
+    expect(getByRole('heading', {name: /event registration reimagined/i})).toBeInTheDocument();
   });
 });
